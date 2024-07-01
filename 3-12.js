@@ -5,9 +5,11 @@ let user = {
 };
 
 
-const  getUserArticlesCount = (user) = >{
+const  getUserArticlesCount = (user) =>{ 
   let countArticles = user.articles.length;
-  getUserArticlesCount (`User has ${countArticles} articles`);
+  console.log(`User has ${countArticles} articles`);
+
+
   switch (countArticles) {
     case 0:
     case 1:
@@ -21,5 +23,6 @@ const  getUserArticlesCount = (user) = >{
     console.log('Так держать!');
     break;
 }
+
 }
 getUserArticlesCount(user);
