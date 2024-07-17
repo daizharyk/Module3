@@ -15,4 +15,4 @@ function logUserArticles() {
 
 logUserArticles.call(user);
 let userLogArticles = logUserArticles.bind(user);
-userLogArticles();
+userLogArticles(); 
